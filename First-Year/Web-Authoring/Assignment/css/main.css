@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+@font-face{
+  font-family: 'robotoCond';
+  src: url(../fonts/robCond.ttf);
+}
+*{
+  margin: 0px;
+  padding: 0px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html{
+  height: 100vh;
+}
+
+section, aside, nav{
+  font-family: 'robotoCond', sans-serif;
+  font-weight: 300;
+}
+
+.header-bar, .footer-bar{
+  clear: both;
+  width: 100%;
+  background-color: #33b5e5;
+  border-bottom: 2px solid #0099CC;
+  height: 50px;
+}
+
+.footer-bar{
+  position: fixed;
+  bottom: 0px;
+}
+
+.nav-left{
+  float: left;
+  padding-left: 15px;
+}
+
+.nav-right{
+  float: right;
+  padding-right: 15px;
+}
+
+.nav-left,.nav-right{
+  font-size: 24px;
+  line-height: 50px;
+}
+
+.nav-list{
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-list li{
+  display: inline;
+  padding: 0px 5px 0px 5px;
+  font-size: 28px;
+}
+
+.section-slider{
+  width: 100%;
+  height: 250px;
+  background-image: url('../img/backgrounds/motorcycle2.jpg');
+  background-position: center center;
+  background-size: cover;
+  border-bottom: 2px solid #263238;
+}
+
+.section-slider-text{
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  flex-direction: column;
+  color: white;
+}
+
+.section-slider-text-title{
+  font-size: 1.7em;
+  padding: 10px;
+  border: 2px solid white;
+}
+
+.section-slider-text-subtitle{
+  text-align: center;
+}
+
+.section-slider-toggle-left{
+  float: left;
+  margin-left: 15px;
+}
+
+.section-slider-toggle-right{
+  float: right;
+  margin-right: 15px;
+}
+
+.section-slider-toggle-left, .section-slider-toggle-right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  color: white;
+  font-size: 18px
+}
+
+@media screen and (max-width: 480px) {
+  .section-slider-toggle-left{
+    display: none;
+  }
+  .section-slider-toggle-right{
+    display: none;
+  }
+}
+
+.section-about{
+
+}
+
+.sidebar-contact{
+  float: right;
+  background-color: #2E2E2E;
+}
+
+.section-about{
+  text-align: center;
+  font
+}
+
+.sidebar-contact{
+  width:35%;
+  color: white;
+  font-weight: 300;
+  text-align: left;
+  margin: 
+}
+
+.sidebar-contact table, iframe, h2{
+  padding: 5px;
+}
+
+.sidebar-contact iframe{
+  width: 100%;
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+.section-about-img{
+  width: 20%
+}
+
+.section-about-text{
+  text-align: left;
+}
+
+.section-products{
+  background-color: #2E2E2E; 
+}
+
+.section-products h1{
+  text-align: center;
+  color: white;
+}
+
+.section-products-slider {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.section-products-slider li{
+  list-style: none;
+  margin-bottom: 15px;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+}
+
+.section-products-slider li a img{
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 250px;
+  transition: box-shadow 0.5s cubic-bezier(0.2, 0.80, 0.45, 1); 
+}
+
+.section-products-slider p{
+    padding-top: 5px;
+}
+
+.section-products-slider li a img:hover{
+  box-shadow: 0px 0px 20px #33b5e5;
+}
+
+.section-custom-left{
+  width: 65%;
+  height: 575px;
+  float: left;
+  background-position: center center;
+  background-size: cover;
+  background-image: url('https://img-new.cgtrader.com/items/36548/dc4c32cd9a/bmw-6-series-white-wireframe-car-3d-model-obj.jpg');
+}
+
+.section-custom-right{
+  float: right;
+  width: 35%;
+  height: 575px;
+  background-color: #212121;
+}
+
+.section-custom-right-text{
+  height: inherit;
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+.custom-arrow{
+  font-size: 36px !important;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px; 
+}
+
+.custom-confirm-button{
+  width: 30%;
+  height: 40px;
+  border: 1px solid white;
+  color: white; 
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+canvas{
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.footer-title{
+  font-family: 'robotoCond', sans-serif;
+  text-align: center;
+  line-height: 50px; 
+}
+
+.customisation-table{
+  margin: 0 auto;
+}
+
+.customisation-table tr{
+  text-align: left;
+}
+
+.section-main{
+  display: flex;
+  justify-content: space-around;
+}
+
+.section-main-about-box{
+  margin: 15px 0px 15px 0px;
+  width: 300px;
+  height: 300px;
+}
+
+.section-title, .section-box-title{
+  text-align: center;
+  font-family: RobotoCond; 
+}
+
+.section-main-about-box a img{
+  width: 300px;
+  height: 300px;
+  border-radius: 50px;
+}
